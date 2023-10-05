@@ -1,0 +1,61 @@
+### Your VMware Cloud Director environment credentials
+
+vcd_user = "username"
+
+vcd_pass = "some-passwd"
+
+vcd_auth_type = "integrated"                                # For example: "token", "api_token", "api_token_file" etc.
+
+vcd_org = "your_organization_name"
+
+vcd_vdc = "your_virtual-data-center_name"
+
+vcd_url = "https//examplecloud.com/api"
+
+
+### Your current EDGE configuration
+
+vcd_external_network_id = "your_external-network-id"        # For example: "urn:vcloud:network:some_letters_and_numbers"
+
+vcd_vapp_template_id = "your_vapp-with-vm-templates"        # If you use one
+
+vcd_vm_name_in_template = "your_vm-template-name"           # If you use one
+
+vcd_participating_vdc_ids = "your_participating_vdc_ids"    # If you use more than one, for example: "urn:vcloud:vdc:some_letters_and_numbers"
+
+vcd_new-vdc-group-name = "your_vdc-group_name"
+
+vcd_current-nsxt-edgegateway-name = "your_current-nsxt-edge_name"
+
+
+### Your network for vApp and Virtual Machines
+
+vcd_edge01_routed01-name = "your_routed-network_name"
+
+vcd_edge01_routed01-gateway = "0.0.0.0"                     # For example: 192.168.0.0, 172.16.0.0, 10.10.0.0 etc.
+
+vcd_edge01_routed01-prefix = 0                              # For example: 28, 24, 20 etc.
+
+vcd_edge01_routed01-start_address = "0.0.0.0"               # For example: 192.168.0.5, 172.16.0.10, 10.10.0.100 etc.
+
+vcd_edge01_routed01-end_address = "0.0.0.0"                 # For example: 192.168.0.10, 172.16.0.20, 10.10.0.200 etc.
+
+
+### Your vApp and number of Virtual Machines
+
+vcd_dev_vapp-name = "your_example-vapp_name"
+
+vcd_vapp_cvm_dev-count = 0                                  # For example: 1, 2, 3 etc.
+
+
+### Your Virtual Machines resources
+
+vcd_vapp_cvm_dev-os_type = "your_os-type"                   # For example: "ubuntu64Guest", "debian6_64Guest", "windows9Server64Guest" etc.
+
+vcd_vapp_cvm_dev-hardware_version = "your_cloud-vmx"        # For example: "vmx-19", "vmx-14", "vmx-12" etc.
+
+vcd_vapp_cvm_dev-memory = 0                                 # For example in MB: 1024, 2048, 3072 etc.
+
+vcd_vapp_cvm_dev-cpus = 0                                   # For example: 1, 2, 3 etc.
+
+vcd_vapp_cvm_dev-disk = "0"                                 # For example in MB: "30720", "61440", "92160" etc.
